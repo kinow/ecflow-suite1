@@ -1,0 +1,3 @@
+This manual is for family %FAMILY%
+It can have any text and will also have variable substitution
+Notice that this does not have manual..end since the whole file is a manual page.

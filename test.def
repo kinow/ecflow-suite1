@@ -1,0 +1,74 @@
+#5.8.4
+suite test
+  edit ECF_HOME '/home/kinow/ecflow/suite1'
+  edit ECF_INCLUDE '/home/kinow/ecflow/suite1'
+  limit l1 2
+  family f1
+    edit SLEEP '3'
+    task t1
+      meter progress 1 100 90
+    task t2
+      trigger t1 == complete
+      event a
+      event b
+    task t3
+      trigger t2:a
+    task t4
+      complete t2:b
+      trigger t2 == complete
+    task t5
+      trigger t1:progress ge 30
+    task t6
+      trigger t1:progress ge 60
+    task t7
+      trigger t1:progress ge 90
+    task query
+      label query ""
+  endfamily
+  family f2
+    edit SLEEP '3'
+    task t1
+      trigger :ECF_DATE == 20200720 and :TIME >= 1000
+    task t2
+      trigger :DOW == 4 and :TIME >= 1300
+    task t3
+      trigger :DD == 1 and :TIME >= 1200
+    task t4
+      trigger (:DOW == 1 and :TIME >= 1300) or (:DOW == 5 and :TIME >= 1000)
+    task t5
+      trigger :TIME == 0002
+  endfamily
+  family house_keeping
+    task clear_log
+      cron -w 0 22:30
+  endfamily
+  family label
+    task t1
+      label info ""
+  endfamily
+  family f4
+    repeat string NAME "a" "b" "c" "d" "e" "f"
+    edit SLEEP '3'
+    family f5
+      repeat integer VALUE 1 10
+      task t1
+        repeat date DATE 20101230 20110105 1
+        label info ""
+        label date ""
+    endfamily
+  endfamily
+  family f5
+    edit SLEEP '3'
+    inlimit -s l1
+    task t1
+    task t2
+    task t3
+    task t4
+    task t5
+    task t6
+    task t7
+    task t8
+    task t9
+  endfamily
+endsuite
+# enddef

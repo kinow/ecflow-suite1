@@ -1,0 +1,14 @@
+%include <head.h>
+
+meter=$(ecflow_client --query meter /test/f1/t1:progress)
+while [[ $meter -lt 100 ]]
+do
+    sleep 2
+    meter=$(ecflow_client --query meter /test/f1/t1:progress)
+    eventa=$(ecflow_client --query event /test/f1/t2:a)
+    eventb=$(ecflow_client --query event /test/f1/t2:b)
+    t5_state=$(ecflow_client --query state /test/f1/t5)
+    ecflow_client --label=query "meter($meter) eventa($eventa) eventb($eventb) t5_state($t5_state)"
+done
+
+%include <tail.h>

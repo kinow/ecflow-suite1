@@ -1,0 +1,19 @@
+%manual
+   Manual for task t2
+   Operations: if this task fails, set it to complete and report next working day
+   Analyst:    Check something ?
+%end
+
+%include <head.h>
+echo "I will now sleep for %SLEEP% seconds"
+sleep %SLEEP%
+ecflow_client --event=a       # Set the first event
+sleep %SLEEP%                 # Sleep a bit more
+ecflow_client --event=b       # Set the second event
+sleep %SLEEP%                 # A last nap...
+%include <tail.h>
+ 
+%manual
+   There can be multiple manual pages in the same file.
+   When viewed they are simply concatenated.
+%end

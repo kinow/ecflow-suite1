@@ -1,0 +1,5 @@
+%manual
+This is the manual page for the %SUITE% suite.
+It lives in %ECF_HOME%
+%end
+This text is not visible in the man page since it is out side of the %manual..%end

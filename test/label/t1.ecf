@@ -1,0 +1,14 @@
+%include <head.h>
+
+n=1
+while [[ $n -le 5 ]]                  # Loop 5 times
+do
+   msg="The date is now $(date)"
+   ecflow_client --label=info "$msg"  # Set the label
+   sleep 3                            # Wait three seconds
+   (( n = $n + 1 ))
+done
+
+ecflow_client --label=info "I have now finished my work."
+
+%include <tail.h>

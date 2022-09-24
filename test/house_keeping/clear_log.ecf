@@ -1,0 +1,9 @@
+%include <head.h>
+
+# copy the log file to the ECF_HOME/log directory
+cp %ECF_LOG% %ECF_HOME%/log/.
+
+# clear the log file
+ecflow_client --log=clear
+
+%include <tail.h>

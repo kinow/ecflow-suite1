@@ -1,0 +1,7 @@
+%include <head.h>
+ecflow_client --label=info "My name is '%NAME%' " " My value is '%VALUE%' " " My date is '%DATE%' "
+# Note the use of repeat date generated variables DATE_YYYY, DATE_MM, DATE_DD, DATE_DOW to automatically reference year,month,day of the month,day of the week
+# These can also be used in trigger expression.
+ecflow_client --label=date "year(%DATE_YYYY%) month(%DATE_MM%) day of month(%DATE_DD%) day of week(%DATE_DOW%)"
+sleep %SLEEP%
+%include <tail.h>
