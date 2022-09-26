@@ -13,17 +13,17 @@ reading the text.
 
 ## Screenshots
 
-![](screenshots/Screenshot from 2022-09-22 14-32-06.png)
+![](screenshots/001.png)
 
-![](screenshots/Screenshot from 2022-09-22 14-32-44.png)
+![](screenshots/002.png)
 
-![](screenshots/Screenshot from 2022-09-22 14-57-23.png)
+![](screenshots/003.png)
 
-![](screenshots/Screenshot from 2022-09-23 10-04-45.png)
+![](screenshots/004.png)
 
-![](screenshots/Screenshot from 2022-09-23 10-10-00.png)
+![](screenshots/005.png)
 
-![](screenshots/Screenshot from 2022-09-23 10-57-37.png)
+![](screenshots/006.png)
 
-![](screenshots/Screenshot from 2022-09-23 10-59-47.png)
+![](screenshots/007.png)
 
