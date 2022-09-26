@@ -11,3 +11,13 @@ After the Limit Features section, the examples get a little more complicated to 
 `test` suite (archived here). But the rest can easily be followed with a toy suite or by just
 reading the text.
 
+## Screenshots
+
+![](./screenshots/Screenshot from 2022-09-22 14-32-06.png)
+![](./screenshots/Screenshot from 2022-09-22 14-32-44.png)
+![](./screenshots/Screenshot from 2022-09-22 14-57-23.png)
+![](./screenshots/Screenshot from 2022-09-23 10-04-45.png)
+![](./screenshots/Screenshot from 2022-09-23 10-10-00.png)
+![](./screenshots/Screenshot from 2022-09-23 10-57-37.png)
+![](./screenshots/Screenshot from 2022-09-23 10-59-47.png)
+
