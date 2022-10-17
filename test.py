@@ -55,6 +55,13 @@ def create_family_f5():
                   [Task(f"t{i}") for i in range(1, 10)])
 
 
+def create_family_f6():
+    return Family("f6",
+                  Edit(SLEEP=3),
+                  Edit(ECF_TRIES=2),
+                  Task("t1"))
+
+
 print("Creating suite definition")
 home = os.path.join(os.getenv("HOME"),"ecflow/suite1")
 defs = Defs(
@@ -66,7 +73,10 @@ defs = Defs(
             create_family_house_keeping(),
             create_family_label(),
             create_family_f4(),
-            create_family_f5()))
+            create_family_f5(),
+            create_family_f6()
+        )
+)
 print(defs)
 
 print("Checking job creation: .ecf -> .job0") 

@@ -1,0 +1,9 @@
+%include <head.h>
+if [ %ECF_TRYNO% -eq 2 ]
+then
+  echo "Try number %ECF_TRYNO% - I will now sleep for %SLEEP% seconds"
+  sleep %SLEEP%
+else
+  exit 1
+fi
+%include <tail.h>

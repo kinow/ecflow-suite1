@@ -70,5 +70,10 @@ suite test
     task t8
     task t9
   endfamily
+  family f6
+    edit SLEEP '3'
+    edit ECF_TRIES '2'
+    task t1
+  endfamily
 endsuite
 # enddef
